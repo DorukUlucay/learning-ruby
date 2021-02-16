@@ -1,6 +1,13 @@
 # learning-ruby
 my learning notes on ruby
 
+
+
+# sources
+* https://www.ruby-lang.org/en/documentation/quickstart/
+* https://www.codecademy.com/learn/learn-ruby
+
+
 # comment
 
 ```ruby
@@ -14,9 +21,6 @@ comment!
 
 ```
 
-# sources
-* https://www.ruby-lang.org/en/documentation/quickstart/
-* https://www.codecademy.com/learn/learn-ruby
 
 # puts(writeln)
 ruby way of console out/print
@@ -196,3 +200,15 @@ g.respond_to?("name=")
 ```
 easy as that
 
+# chain methods 
+```ruby
+name = "Doruk".downcase.reverse.upcase
+```
+
+
+# gets.chomp
+
+# string interpolation/formatting
+
+# last_name.capitalize!
+* change in-place ?
