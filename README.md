@@ -211,4 +211,4 @@ name = "Doruk".downcase.reverse.upcase
 # string interpolation/formatting
 
 # last_name.capitalize!
-* change in-place ?
+* capitalize and assign. yani ! in-place assignment yapıyor.
