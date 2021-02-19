@@ -240,3 +240,41 @@ puts s1.desc
 # therefore, below line throws error. 
 #puts s3.count 
 ```
+
+# thread un-safe singleton
+
+```ruby
+class SimpleSingleton
+
+    def initialize()
+        @count = 0
+    end
+
+    @instance = new             # create an instance of object
+    private_class_method :new   # then make new method private
+
+    def self.instance
+        @instance               # return instance variable named instance when called
+    end
+
+    def Increment
+        @count +=  1
+    end
+
+    attr_reader :count
+end
+
+
+# throws exc since no public new method is available
+# s1 = SimpleSingleton.new 
+
+s1 = SimpleSingleton.instance
+s2 = SimpleSingleton.instance
+
+s1.Increment
+s1.Increment
+s1.Increment
+
+puts s1.count == s2.count
+# true
+```
