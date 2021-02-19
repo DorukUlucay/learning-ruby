@@ -212,3 +212,31 @@ name = "Doruk".downcase.reverse.upcase
 
 # last_name.capitalize!
 * capitalize and assign. yani ! in-place assignment yapıyor.
+
+
+# instance var, class var and accessor sample
+
+```ruby
+class Single
+    @@count = 0
+
+    def initialize(desc)
+        @desc= desc
+        @@count += 1
+        puts "number: #{@@count} - desc: #{@desc}"
+    end
+    
+    attr_accessor :desc
+
+end
+
+s1 = Single.new "class 1"
+s2 = Single.new "class 2"
+s3 = Single.new "class 3"
+
+puts s1.desc
+
+# accessing class variables from outside is not advised in ruby world as far as i got to know.
+# therefore, below line throws error. 
+#puts s3.count 
+```
