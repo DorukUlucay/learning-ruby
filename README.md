@@ -281,3 +281,22 @@ s1.Increment
 puts s1.count == s2.count
 # true
 ```
+
+
+# user input, string interpolation
+```ruby
+print "What's your first name?"
+first_name = gets.chomp
+
+print "What's your last name?"
+last_name = gets.chomp
+
+print "What's your city?"
+city = gets.chomp
+
+
+print "What's your state/province ?"
+state = gets.chomp
+
+print "#{first_name} #{last_name} is from #{city}, #{state}"
+```
