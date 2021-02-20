@@ -311,3 +311,12 @@ puts "one equals two"
 else 
 puts "one equals anything else but one or two"
 end
+```
+
+# include?
+```ruby
+if user_input.include? "s"
+  puts "user input has s in it"
+end
+```
+
