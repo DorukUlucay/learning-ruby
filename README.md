@@ -300,3 +300,14 @@ state = gets.chomp
 
 print "#{first_name.capitalize!} #{last_name.capitalize!} is from #{city.capitalize!}, #{state.upcase!}"
 ```
+
+
+# if, else, elsif
+```ruby
+if ( 1== 1)
+puts "one equals one"
+elsif (1==2)
+puts "one equals two"
+else 
+puts "one equals anything else but one or two"
+end
