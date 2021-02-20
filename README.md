@@ -320,3 +320,15 @@ if user_input.include? "s"
 end
 ```
 
+
+# gsub
+
+replaces substrings. below replaces s with th
+
+```ruby
+
+user_input.gsub!(/s/, "th")
+
+```
+
+
