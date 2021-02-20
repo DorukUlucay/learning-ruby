@@ -298,5 +298,5 @@ city = gets.chomp
 print "What's your state/province ?"
 state = gets.chomp
 
-print "#{first_name} #{last_name} is from #{city}, #{state}"
+print "#{first_name.capitalize!} #{last_name.capitalize!} is from #{city.capitalize!}, #{state.upcase!}"
 ```
